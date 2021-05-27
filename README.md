@@ -1,3 +1,19 @@
+# SIGN UP AND LOGIN INFORMATION
+
+## Check User in Context on useEffect
+
+firebase.auth().onAuthStateChanged((user) => {
+setUser(user);
+});
+
+## Sign Up
+
+await firebase.auth().createUserWithEmailAndPassword(email.value, password.value);
+
+## Log In
+
+await firebase.auth().signInWithEmailAndPassword(email.value, password.value);
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
